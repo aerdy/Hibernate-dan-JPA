@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="false" dynamic-update="false" mutable="true" name="hibernate2.entitas.Person" optimistic-lock="version" polymorphism="implicit" select-before-update="false">
+    <id column="id" name="id" type="int">
+      <generator class="identity"/>
+    </id>
+    <property column="nama" name="nama" type="string"/>
+    <property column="telepon" name="telepon" type="string"/>
+    <property column="alamat" name="alamat" type="string"/>
+    
+  </class>
+</hibernate-mapping>
